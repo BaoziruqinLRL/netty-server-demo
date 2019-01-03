@@ -1,0 +1,8 @@
+netty:
+  port: 11111
+  timeSlice: 200,500,1000,5000
+
+server:
+  port: 8990
+
+
