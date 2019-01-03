@@ -37,7 +37,7 @@ public class NettyBootConfig {
         ServerConstructor.setHeartbeatType("ping");
         ServerConstructor.setHeartbeatReply("pong");
         ServerConstructor.setResendTimeWheel(timeSlice);
-        ServerConstructor.setServerHeartbeat(true);
+        ServerConstructor.setServerHeartbeat(false);
     }
 
     public void start(){
