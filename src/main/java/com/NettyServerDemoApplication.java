@@ -14,13 +14,13 @@ import javax.annotation.Resource;
 @RestController
 @SpringBootApplication
 @RequestMapping(value = "/server")
-public class SpringbootNettyServerDemoApplication implements CommandLineRunner {
+public class NettyServerDemoApplication implements CommandLineRunner {
 
     @Resource
     private NettyBootConfig bootConfig;
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringbootNettyServerDemoApplication.class, args);
+        SpringApplication.run(NettyServerDemoApplication.class, args);
     }
 
     @Override
