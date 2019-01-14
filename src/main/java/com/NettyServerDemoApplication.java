@@ -30,6 +30,6 @@ public class NettyServerDemoApplication implements CommandLineRunner {
 
     @RequestMapping(value = "/demo-send")
     public Boolean sendMsg(@RequestParam("msg") String msg, @RequestParam("clientId") String clientId){
-        return BusinessNotify.noticeSingleClient(clientId,msg,true,false);
+        return BusinessNotify.noticeSingleClient(clientId,msg,true,false,"type");
     }
 }
